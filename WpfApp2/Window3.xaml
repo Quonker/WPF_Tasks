@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp2.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Window3" Height="700" Width="800"
+         Icon="C:\Users\я\source\repos\YnkaKiynkaKPIP\WpfApp2\img/IconWindow3.bmp">
+    <Grid Margin="0,0,0,-21" Background="#F6CBBC">
+        <TextBlock x:Name="Logo1" HorizontalAlignment="Left" Height="92" Margin="320,43,0,0" TextWrapping="Wrap"  Text="ELLE" VerticalAlignment="Top" Width="71" FontSize="43" FontFamily="Agency FB" TextAlignment="Center"/>
+        <TextBlock x:Name="LOgo2" HorizontalAlignment="Left" Height="92" Margin="381,43,0,0" TextWrapping="Wrap" Foreground="#a511d5" Text="GIRLS" VerticalAlignment="Top" Width="83" FontSize="43" FontFamily="Agency FB" TextAlignment="Center"/>
+        <TextBlock x:Name="tBox" HorizontalAlignment="Left" Height="92" Margin="251,135,0,0" TextWrapping="Wrap" Foreground="#a511d5" Text="Тест 'Какой ты салатик?'" VerticalAlignment="Top" Width="287" FontSize="24" FontFamily="Agency FB" TextAlignment="Center"/>
+        <Image Name="bg" Source="C:\Users\я\source\repos\YnkaKiynkaKPIP\WpfApp2\img\testBg.jpg" Margin="148,135,129,165"></Image>
+        <Button Name="start" FontFamily="Doctor Bob" FontSize="30" Background="#BC8EC4" Click="ButtonManagment" Content="   Start^^" Width="230" Height="80" Margin="280,498,282,112"></Button>
+        <Button Name="r1" FontFamily="Doctor Bob" FontSize="24" Background="#BC8EC4" Click="ButtonClickr1" Content="1" Height="180" Margin="22,257,462,253"  Visibility="Hidden"/>
+        <Button Name="r2" FontFamily="Doctor Bob" FontSize="24" Background="#BC8EC4" Click="ButtonClickr2" Content="2" Height="180" Margin="22,483,462,27"  Visibility="Hidden"/>
+        <Button Name="r3" FontFamily="Doctor Bob" FontSize="24" Background="#BC8EC4" Click="ButtonClickr3" Content="3" Height="180" Margin="452,257,30,253"  Visibility="Hidden"/>
+        <Button Name="r4" FontFamily="Doctor Bob" FontSize="24" Background="#BC8EC4" Click="ButtonClickr4" Content="4" Height="180" Margin="452,479,30,31"  Visibility="Hidden"/>
+
+    </Grid>
+</Window>

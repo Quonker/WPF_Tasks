@@ -1,0 +1,120 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Grid" Height="450" Width="650"
+        Icon="C:\Users\я\source\repos\YnkaKiynkaKPIP\WpfApp2\img/IconMainWindow.bmp">
+
+    <Grid Background="#F6CBBC">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <Button Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="6" FontFamily="Sylfaen" FontSize="16" Background="#BC8EC4" Click="ButtonClick1" Content="Строки" >
+            <Button.ToolTip>
+                <ToolTip Width="300" Height="350">
+                    <StackPanel>
+                        <TextBlock Text="Конпока 'Строки'"></TextBlock>
+                        <TextBlock Text="в первое текстовое поле вводится исходный текст" />
+                        <TextBlock Text="ВО второе тектовое поле вводится число" />
+                        <TextBlock Text="В третие тектовое поле вводится подстрока" />
+                        <TextBlock Text="Для выхода нажмите ctrl + F4" />
+                        <Image Source="C:\Users\я\source\repos\YnkaKiynkaKPIP\WpfApp2\img/girl1.png" />
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        <Button Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="15" FontFamily="Sylfaen" FontSize="16" Background="#BC8EC4" Click="ButtonClick2" Content="Создание объекта">
+            <Button.ToolTip>
+                <ToolTip Width="300" Height="400">
+                    <StackPanel>
+                        <TextBlock Text="Конпока 'Создание объекта'"></TextBlock>
+                        <TextBlock Text="сайт '21 век'" />
+                        <TextBlock Text="Для выхода нажмите ctrl + F4" />
+                        <Image Source="C:\Users\я\source\repos\YnkaKiynkaKPIP\WpfApp2\img/girl2.png" />
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        <Button Grid.Column="9" Grid.Row="4" Grid.ColumnSpan="4" FontFamily="Sylfaen" FontSize="16" Background="#BC8EC4" Click="ButtonClick3" Content="Тест">
+            <Button.ToolTip>
+                <ToolTip Width="300" Height="400">
+                    <StackPanel>
+                        <TextBlock Text="Конпока 'Тест'"></TextBlock>
+                        <TextBlock Text="..." />
+                        <TextBlock Text="Для выхода нажмите ctrl + F4" />
+                        <Image Source="C:\Users\я\source\repos\YnkaKiynkaKPIP\WpfApp2\img/girl3.png" />
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        <Button Grid.Column="5" Grid.Row="6" Grid.ColumnSpan="7" FontFamily="Sylfaen" FontSize="16" Background="#BC8EC4" Click="ButtonClick4" Content="Графика">
+            <Button.ToolTip>
+                <ToolTip Width="300" Height="350">
+                    <StackPanel>
+                        <TextBlock Text="Конпока 'Графика'"></TextBlock>
+                        <TextBlock Text="..." />
+                        <TextBlock Text="Для выхода нажмите ctrl + F4" />
+                        <Image Source="C:\Users\я\source\repos\YnkaKiynkaKPIP\WpfApp2\img/girl4.png" />
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        <Button Grid.Column="1" Grid.Row="8" Grid.ColumnSpan="10" FontFamily="Sylfaen" FontSize="16" Background="#BC8EC4" Click="ButtonClick5" Content="База данных">
+            <Button.ToolTip>
+                <ToolTip Width="300" Height="320">
+                    <StackPanel>
+                        <TextBlock Text="Конпока 'Базы данных'"></TextBlock>
+                        <TextBlock Text="..." />
+                        <TextBlock Text="Для выхода нажмите ctrl + F4" />
+                        <Image Source="C:\Users\я\source\repos\YnkaKiynkaKPIP\WpfApp2\img/girl5.png" />
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        <Button Grid.Column="8" Grid.Row="10" Grid.ColumnSpan="6" FontFamily="Sylfaen" FontSize="16" Background="#BC8EC4" Click="ButtonClick6" Content="Статьи">
+            <Button.ToolTip>
+                <ToolTip Width="300" Height="350">
+                    <StackPanel>
+                        <TextBlock Text="Конпока 'Статья'"></TextBlock>
+                        <TextBlock Text="..." />
+                        <TextBlock Text="Для выхода нажмите ctrl + F4" />
+                        <Image Source="C:\Users\я\source\repos\YnkaKiynkaKPIP\WpfApp2\img/girl6.png" />
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+
+    </Grid>
+</Window>
+

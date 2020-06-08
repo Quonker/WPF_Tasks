@@ -1,0 +1,57 @@
+﻿<Window x:Class="WpfApp2.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Window5" Height="461" Width="466"
+         Icon="C:\Users\я\source\repos\YnkaKiynkaKPIP\WpfApp2\img/IconWindow5.bmp">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="20 8 20 8" />
+            <Setter Property="Width" Value="100" />
+            <Setter Property="Height" Value="30" />
+        </Style>
+    </Window.Resources>
+    <Grid Background="#F6CBBC" Margin="0,0,2,0" Height="430" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="199*"/>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="34*"/>
+            <ColumnDefinition Width="32*"/>
+            <ColumnDefinition Width="142*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <DataGrid AutoGenerateColumns="False" Background="LightGray" x:Name="filmsGrid" Margin="0,0,0,227" Grid.ColumnSpan="5" >
+
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding University}" Header="University" Width="200"/>
+                <DataGridTextColumn Binding="{Binding FacultyName}" Header="Faculty" Width="200"/>
+                <DataGridTextColumn Binding="{Binding TeachersCount}" Header="Teachers" Width="200"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Rectangle Fill="LightGray"  Height="53" Stroke="Black" VerticalAlignment="Top" Grid.ColumnSpan="5" Margin="1,377,0,0"/>
+
+        <Button x:Name="updateButton" Content="Добавить" Click="updateButton_Click" Margin="143,230,0,173" Background="#BC8EC4" Height="Auto" Grid.ColumnSpan="5" Width="Auto"/>
+        <Button x:Name="deleteButton" Content="Удалить" Click="deleteButton_Click" Margin="143,283,0,119" Background="#BC8EC4" Height="Auto" Grid.ColumnSpan="5" Width="Auto"/>
+
+        <TextBox x:Name="university" Margin="1,230,91,173" />
+        <TextBox x:Name="facultyName" Margin="0,283,91,119"/>
+        <TextBox x:Name="teachersCount" Margin="0,338,91,65" />
+        <Label Content="University" HorizontalAlignment="Left" Margin="0,208,0,0" VerticalAlignment="Top" Width="82"/>
+        <Label Content="Faculty" HorizontalAlignment="Left" Margin="0,257,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label Content="Teachers" HorizontalAlignment="Left" Margin="0,318,0,0" VerticalAlignment="Top" Width="122"/>
+        <Button Content="Запрос 1" HorizontalAlignment="Left" Margin="11,385,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Cursor="Hand"  Background="#BC8EC4"/>
+        <Button Content="Запрос 2" HorizontalAlignment="Left" Margin="106,385,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1" Cursor="Hand"  Background="#BC8EC4"/>
+        <Button Content="Запрос 3" HorizontalAlignment="Left" Margin="196,385,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_2" Cursor="Hand"  Background="#BC8EC4" Grid.ColumnSpan="3"/>
+        <Button Content="Запрос 4" HorizontalAlignment="Left" Margin="10,385,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_3" Cursor="Hand"  Background="#BC8EC4" Grid.Column="3" Grid.ColumnSpan="2"/>
+        <Button Content="XML" HorizontalAlignment="Left" Margin="143,338,0,0" VerticalAlignment="Top" Width="313" Click="Button_Click_XML" Cursor="Hand"  Background="#BC8EC4" Height="27" Grid.ColumnSpan="5"/>
+        <Button Content="Запрос 5" HorizontalAlignment="Left" Margin="59,385,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click_4" Cursor="Hand"  Background="#BC8EC4" Grid.Column="4"/>
+    </Grid>
+</Window>
